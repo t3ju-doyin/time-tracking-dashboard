@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 0;
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(226deg, 43%, 10%);
+}
+body img {
+  max-width: 100%;
+}
+body .current-week, body .title, body .large {
+  color: rgb(222, 221, 240);
+}
+body .previous-week, body .small {
+  color: hsl(236deg, 100%, 87%);
+}
+body ul li {
+  color: hsl(235deg, 45%, 61%);
+  list-style: none;
+  cursor: pointer;
+}
+body ul li:hover {
+  color: rgb(222, 221, 240);
+  transition: 0.4s;
+}
+body .box {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+body .left-menu {
+  border-radius: 8px;
+}
+body .left-menu {
+  background-color: hsl(235deg, 46%, 20%);
+}
+
+main .main-container {
+  max-width: 200px;
+  width: 85%;
+  margin-inline: auto;
+}
+
+section.left-menu .left-menu-container {
+  margin-bottom: 1.5rem;
+}
+section.left-menu .left-menu-container .container {
+  width: 85%;
+  margin-inline: auto;
+}
+section.left-menu .left-menu-container .profile {
+  background-color: hsl(246deg, 80%, 60%);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1.1rem 0;
+}
+section.left-menu .left-menu-container .profile img {
+  width: 17%;
+  border-radius: 50%;
+  border: 2px solid rgb(222, 221, 240);
+}
+section.left-menu .left-menu-container .profile .container {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+section.left-menu .left-menu-container .profile .small {
+  font-size: 0.65rem;
+  margin-bottom: 0.2rem;
+}
+section.left-menu .left-menu-container .schedule {
+  padding-bottom: 1.2rem;
+}
+section.left-menu .left-menu-container .schedule ul {
+  display: flex;
+  justify-content: space-between;
+}
+section.left-menu .left-menu-container .schedule ul li {
+  font-size: 0.9rem;
+}
+
+section.analysis .box {
+  background-color: pink;
+  border-radius: 10px;
+  padding-top: 1.5rem;
+}
+section.analysis .box .box-container {
+  padding: 1.2rem 0;
+  border-radius: 8px;
+  background-color: hsl(235deg, 46%, 20%);
+}
+section.analysis .box .box-container .mini-header {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+section.analysis .box .box-container .mini-header img {
+  width: 5%;
+  height: 2px;
+}
+section.analysis .box .box-container .mini-header .title {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+section.analysis .box .box-container .previous-week {
+  font-size: 0.6rem;
+}
+section.analysis .box .box-container .hours-spent {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.analysis .box:hover {
+  background-color: hsla(246deg, 80%, 75%, 0.445);
+  opacity: 0.8;
+  transition: 0.4s;
+}
+section.analysis .work-box {
+  background-color: hsl(15deg, 100%, 70%);
+  background-image: url("icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+section.analysis .play-box {
+  background-color: hsl(195deg, 74%, 62%);
+  background-image: url("icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+section.analysis .study-box {
+  background-color: hsl(348deg, 100%, 68%);
+  background-image: url("icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+section.analysis .exercise-box {
+  background-color: hsl(145deg, 58%, 55%);
+  background-image: url("icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+section.analysis .social-box {
+  background-color: hsl(264deg, 64%, 52%);
+  background-image: url("icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+section.analysis .selfcare-box {
+  background-color: hsl(43deg, 84%, 65%);
+  background-image: url("icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+@media (min-width: 700px) {
+  main .main-container {
+    max-width: 700px;
+    display: flex;
+    gap: 1rem;
+  }
+  main .main-container section.left-menu {
+    flex-basis: 25%;
+  }
+  main .main-container section.left-menu .left-menu-container {
+    margin: 0;
+  }
+  main .main-container section.left-menu .profile {
+    padding: 1rem 0 1.5rem 0.5rem;
+  }
+  main .main-container section.left-menu .profile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .main-container section.left-menu .profile .container img {
+    width: 35%;
+  }
+  main .main-container section.left-menu .profile .container .profile-info p.large {
+    font-size: 1.5rem;
+  }
+  main .main-container section.left-menu .profile .container span {
+    display: block;
+  }
+  main .main-container section.left-menu .schedule {
+    padding: 0;
+  }
+  main .main-container section.left-menu .schedule .container {
+    width: 75%;
+  }
+  main .main-container section.left-menu .schedule ul {
+    display: initial;
+  }
+  main .main-container section.left-menu .schedule ul li + li {
+    margin-top: 1rem;
+  }
+  main .main-container section.analysis {
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  main .main-container section.analysis .box {
+    margin: 0;
+    display: flex;
+  }
+  main .main-container section.analysis .box .box-container {
+    align-content: flex-end;
+    flex-basis: 100%;
+  }
+  main .main-container section.analysis .box .box-container .mini-header {
+    margin-bottom: 1rem;
+  }
+  main .main-container section.analysis .box .box-container .hours-spent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .main-container section.analysis .box .box-container .hours-spent .current-week {
+    font-size: 1.7rem;
+    margin-bottom: 0.3rem;
+  }
+}/*# sourceMappingURL=time-tracker.css.map */
